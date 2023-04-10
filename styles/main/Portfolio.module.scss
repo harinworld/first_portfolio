@@ -1,0 +1,123 @@
+.mainbg{
+    background-color: #030A1E;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+    .maintext{
+        color: #fff;
+        font-family: 'Playfair Display', serif;
+        font-size: 6rem;
+        position: absolute;
+        left: 34.5%;
+        top: 42%;
+        // transform: translate(-50%, -50%);
+        z-index: 10;
+    }
+    // .maintext2{
+    //     color: #fff;
+    //     font-family: 'Fasthand', cursive;
+    //     font-size: 8rem;
+    //     position: absolute;
+    //     left: 10%;
+    //     top: 20%;
+    //     // transform: translate(-50%, -50%);
+    //     z-index: 10;
+    //     opacity: 0.5;
+    // }
+    .purple{
+        position: absolute;
+        left: 0%;
+        top: 25%;
+        width: 17vw;
+        height: 17vw;
+        background:linear-gradient(#4E3D95, #4E82DF);
+        opacity: 70%;
+        border-radius: 50%;
+        filter: blur(40px);
+        animation: purplecircle 20s infinite;
+    }
+    @keyframes purplecircle {
+        0%{
+            top: 25%;
+            left: 0%;
+        }
+        50%{
+            top: -10%;
+            left: 70%;
+        }
+        70%{
+            top: 70%;
+            left: 70%;
+        }
+        100%{
+            top: 25%;
+            left: 0%;
+        }
+    }
+    .green{
+        position: absolute;
+        left: 50%;
+        bottom: -10%;
+        width: 30vw;
+        height: 30vw;
+        background:linear-gradient(#F4BE78, #46DAF3);
+        opacity: 60%;
+        border-radius: 50%;
+        filter: blur(40px);
+        animation: greencircle 25s infinite;
+    }
+    @keyframes greencircle {
+        0%{
+            left: 50%;
+            bottom: -10%;
+        }
+        50%{
+            left: -10%;
+            bottom: 40%;
+        }
+        70%{
+            left: 60%;
+            bottom: 80%;
+        }
+        100%{
+            left: 50%;
+            bottom: -10%;
+        }
+    }
+    .red{
+        position: absolute;
+        right: 0%;
+        top: -35%;
+        width: 35vw;
+        height: 35vw;
+        background:linear-gradient(90deg, #B76663, rgba(115,45,81,0.5));
+        opacity: 80%;
+        border-radius: 50%;
+        filter: blur(40px);
+        animation: redcircle 25s infinite;
+    }
+    @keyframes redcircle {
+        0%{
+            right: 0%;
+            top: -35%;
+        }
+        50%{
+            right: 20%;
+            top: 50%;
+        }
+        70%{
+            right: 90%;
+            top: -10%;
+        }
+        100%{
+            right: 0%;
+            top: -35%;
+        }
+    }
+}

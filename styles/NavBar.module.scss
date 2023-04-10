@@ -1,0 +1,22 @@
+.navbar{
+    font-family: 'Playfair Display', serif;
+    color: #fff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    display: flex;
+    padding: 0.5em 3em;
+    width: 100%;
+    .jm{
+        font-size: 3rem;
+        width: 60%;
+    }
+    .title{
+        display: flex;
+        font-size: 1.2rem;
+        width: 30%;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
