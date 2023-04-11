@@ -1,4 +1,4 @@
-.detailbg{
+.detailbg {
     width: 100%;
     height: 100vh;
     overflow: hidden;
@@ -6,8 +6,9 @@
     display: flex;
     padding: 0 5%;
     scale: 1;
+
     // margin-top: 150vh;
-    .lottie{
+    .lottie {
         scale: 0.7;
         position: relative;
         left: -30%;
@@ -15,7 +16,8 @@
         opacity: 0;
         width: 50vw;
     }
-    .detailtext{
+
+    .detailtext {
         padding: 0 1em;
         color: #fff;
         width: 50%;
@@ -27,10 +29,12 @@
         transform: translateY(-10%);
         opacity: 0;
         justify-content: center;
-        .content1{
+
+        .content1 {
             letter-spacing: 0.8px;
             line-height: 33px;
-            p:nth-of-type(1){
+
+            p:nth-of-type(1) {
                 font-size: 1.7rem;
                 font-weight: 700;
                 background: linear-gradient(#2668EF, #71F3D2);
@@ -39,30 +43,37 @@
                 text-shadow: #71F3D2 0 0 10px;
                 margin-bottom: 1rem;
             }
-            .img2{
+
+            .img2 {
                 margin: 0 1.2rem;
             }
-            .img4{
+
+            .img4 {
                 margin: 0 1.2rem;
             }
-            .img6{
+
+            .img6 {
                 margin-left: 1.2rem;
             }
-            img{
+
+            img {
                 width: 3vw;
             }
         }
-        .content2{
+
+        .content2 {
             margin-top: 2rem;
             letter-spacing: 0.8px;
             line-height: 33px;
-            p:nth-of-type(1){
+
+            p:nth-of-type(1) {
                 font-size: 1.7rem;
                 font-weight: 700;
                 color: #c566d6;
                 text-shadow: #BB31CF 0 0 10px;
             }
-            p:nth-of-type(2){
+
+            p:nth-of-type(2) {
                 margin-top: 0.3rem;
                 font-size: 1.3rem;
                 color: rgb(255, 255, 255);
@@ -71,34 +82,38 @@
     }
 
 
-    &.active{
-        .lottie{
+    &.active {
+        .lottie {
             animation: move 0.8s 0s ease-in-out both;
         }
+
         @keyframes move {
-            0%{
+            0% {
                 opacity: 0;
                 left: -30%;
                 top: -20%;
             }
-            100%{
+
+            100% {
                 opacity: 1;
                 left: 0%;
                 top: 0%;
             }
         }
 
-        .detailtext{
+        .detailtext {
             animation: move2 0.8s 0s ease-in-out both;
         }
+
         @keyframes move2 {
-            0%{
+            0% {
                 opacity: 0;
                 left: 50%;
                 top: 30%;
                 transform: translateY(-10%);
             }
-            100%{
+
+            100% {
                 opacity: 1;
                 left: 0;
                 top: 50%;
@@ -107,4 +122,3 @@
         }
     }
 }
-

@@ -25,6 +25,7 @@ const ProjectList = () => {
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
+        loop={true}
         autoplay={{
           delay: 3000,
           disableOnInteraction: false,

@@ -45,7 +45,6 @@ const AboutDetail = () => {
   return (
     <>
         <div className={`${styles.detailbg} ${active?styles.active:null}`} ref={observerRef}>
-            {/* <Lottie className={styles.lottie} loop animationData={lottieJson} play /> */}
             <img src='../animation_500_lg0ku4qn.gif' className={styles.lottie}/>
             <div className={styles.detailtext}>
                 <p>

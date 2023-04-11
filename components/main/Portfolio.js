@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import styles from '@/styles/main/Portfolio.module.scss'
 import NavBar from '../NavBar'
+import Link from 'next/link';
 
 const Portfolio = () => {
 
@@ -36,7 +37,12 @@ const Portfolio = () => {
     <>
       <NavBar/>
       <div ref={containerRef} className={styles.mainbg}>
-          <div ref={layerRef1} className={styles.maintext}>PORTFOLIO</div>
+          <div ref={layerRef1} className={styles.maintext}>
+            PORTFOLIO
+            
+          </div>
+          <button><span><Link href="/about/aboutme">ABOUT ME</Link></span></button>
+          
           <div ref={layerRef2} className={styles.purple}></div>
           <div ref={layerRef3} className={styles.green}></div>
           <div ref={layerRef4} className={styles.red}></div>

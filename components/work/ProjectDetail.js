@@ -3,17 +3,18 @@ import styles from "@/styles/work/ProjectDetail.module.scss";
 import { useRouter } from "next/router";
 import NavBar from "../NavBar";
 import { DataContext } from "../context/Context";
+import Link from "next/link";
 
 const ProjectDetail = () => {
   const data = useContext(DataContext);
   const router = useRouter();
-  console.log(router.query.id);
-  console.log("detail", data);
+  // console.log(router.query.id);
+  // console.log("detail", data);
   // console.log('detail id', data.projects[1]);
   // console.log('detail id', data.projects[router.query.id]);
 
   const detail = data.projects[router.query.id];
-  console.log("aaa", detail);
+  // console.log("aaa", detail);
 
   // const observerRef = useRef([]);
   // const [active,setActive] = useState(false);
@@ -52,7 +53,11 @@ const ProjectDetail = () => {
         <div className={styles.detailtext}>
           <div className={styles.content1}>
             <p>{detail.name}</p>
-            <button>CLICK ME</button>
+            <button>
+              <a href={detail.url} target="_blank">
+                SEE MORE
+              </a>
+            </button>
           </div>
           <div className={styles.content2}>
             <p>{detail.detail}</p>
@@ -64,9 +69,14 @@ const ProjectDetail = () => {
               </video>
             </div>
             <div className={styles.content3}>
-              <p>📒 트러블슈팅</p>
+              <p>📒 기능 및 해결과정</p>
               <p>{detail.trouble}</p>
               <p>{detail.trouble2}</p>
+              <p>{detail.trouble3}</p>
+              <div className={styles.content4}>
+                <p>📆 프로젝트 기간</p>
+                <p>{detail.day}</p>
+              </div> 
             </div>
           </div>
         </div>
