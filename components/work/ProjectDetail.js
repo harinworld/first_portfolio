@@ -69,12 +69,12 @@ const ProjectDetail = () => {
               </video>
             </div>
             <div className={styles.content3}>
-              <p>📒 기능 및 해결과정</p>
+              <p>기능 및 해결과정</p>
               <p>{detail.trouble}</p>
               <p>{detail.trouble2}</p>
               <p>{detail.trouble3}</p>
               <div className={styles.content4}>
-                <p>📆 프로젝트 기간</p>
+                <p>프로젝트 기간</p>
                 <p>{detail.day}</p>
               </div> 
             </div>

@@ -1,4 +1,4 @@
-.navbar{
+.navbar {
     font-family: 'Playfair Display', serif;
     color: #fff;
     position: fixed;
@@ -8,14 +8,16 @@
     display: flex;
     padding: 0.5em 3em;
     width: 100%;
-    .jm{
+
+    .jm {
         font-size: 3rem;
         width: 60%;
     }
-    .title{
+
+    .title {
         display: flex;
-        font-size: 1.2rem;
-        width: 30%;
+        font-size: 1.1rem;
+        width: 31.5%;
         justify-content: space-between;
         align-items: center;
     }

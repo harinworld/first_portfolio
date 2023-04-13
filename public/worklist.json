@@ -13,7 +13,10 @@
       "techStack": [
         "../html5.svg",
         "../css.svg",
-        "../javascript.svg"
+        "../javascript.svg",
+        "../sass.svg",
+        "../figma.svg",
+        "../github.svg"
       ],
       "trouble": "메인페이지 - 페이지 실행시 자동으로 스크롤되게하려고 setinterval 함수를 사용했었지만 해결되지않아 setinterval안에서 if문추가로 해결했습니다.",
       "trouble2": "기념관 페이지 - 반응형에 맞춰 스크립트를 수정하는 과정에서 마우스휠 이벤트가 제거되지 않는 이슈가 발생하였습니다. 따라서 사용하던 resize() 메서드 대신 matchMedia 메소드를 사용하여 불린값으로 조건을 주어 pc와 스크린 사이즈 820 이하의 화면에서 이벤트를 다르게 주었습니다.",
@@ -33,7 +36,10 @@
       "techStack": [
         "../react.svg",
         "../sass.svg",
-        "../api.svg"
+        "../api.svg",
+        "../figma.svg",
+        "../github.svg",
+        "../adobephotoshop.svg"
       ],
       "trouble": "영화 상세정보와 영화 박스오피스 순위 api가 달라, 각각의 api가 가진 다른 json파일 형식에서 영화에 맞는 상세내용을 불러오는데 어려움이 있었지만 개봉일을 기준으로 filter를 적용시켜 해결하였습니다.",
       "trouble2": "영화 상세정보 페이지에서 간단한 로그인 기능을 구현하여 로그인을 해야만 관람후기를 작성할 수 있도록 하였습니다.",
@@ -53,7 +59,10 @@
       "techStack": [
         "../nextdotjs.svg",
         "../sass.svg",
-        "../mysql.svg"
+        "../mysql.svg",
+        "../figma.svg",
+        "../github.svg",
+        "../react context.svg"
       ],
       "trouble": "메인 패이지의 첫 섹션과 나머지 애니메이션별 섹션들이 연결되어 이동되게하기위해 'react-fullpage' 라이브러리를 사용했습니다.",
       "trouble2": "각각의 애니메이션 섹션에서 'see more' 버튼을 누르면 각각의 애니메이션 캐릭터 페이지로 이동하기위해 'Link'태그 쿼리값으로 애니메이션 이름을 넘겨주었습니다.",

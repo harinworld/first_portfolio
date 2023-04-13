@@ -39,10 +39,7 @@ const Portfolio = () => {
       <div ref={containerRef} className={styles.mainbg}>
           <div ref={layerRef1} className={styles.maintext}>
             PORTFOLIO
-            
-          </div>
-          <button><span><Link href="/about/aboutme">ABOUT ME</Link></span></button>
-          
+          </div>          
           <div ref={layerRef2} className={styles.purple}></div>
           <div ref={layerRef3} className={styles.green}></div>
           <div ref={layerRef4} className={styles.red}></div>

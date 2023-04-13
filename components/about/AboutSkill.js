@@ -43,18 +43,28 @@ const AboutSkill = () => {
   return (
     <>
             <div className={`${styles.detailbg} ${active?styles.active:null}`} ref={observerRef}>
-                {/* <Lottie className={styles.lottie} loop animationData={lottieJson} play /> */}
                 <img src='../lottie_skill.gif' className={styles.lottie}/>
                 <div className={styles.detailtext}>
                     <div className={styles.content1}>
                         <p>Skills</p>
-                        <img className={styles.img1} src='../html5.svg'/>
-                        <img className={styles.img2} src='../css.svg'/>
-                        <img className={styles.img3} src='../javascript.svg'/>
-                        <img className={styles.img4} src='../react.svg'/>
-                        <img className={styles.img5} src='../nextdotjs.svg'/>
-                        <img className={styles.img6} src='../vuedotjs.svg'/>
+                        <div className={styles.first}>
+                          <img className={styles.img1} src='../html5.svg'/>
+                          <img className={styles.img2} src='../css.svg'/>
+                          <img className={styles.img3} src='../javascript.svg'/>
+                          <img className={styles.img4} src='../react.svg'/>
+                          <img className={styles.img5} src='../nextdotjs.svg'/>
+                          <img className={styles.img6} src='../vuedotjs.svg'/>
+                        </div>
+                        <div className={styles.second}>
+                          <img className={styles.img7} src='../github.svg'/>
+                          <img className={styles.img8} src='../vercel (1).svg'/>
+                          <img className={styles.img9} src='../filezilla.svg'/>
+                          <img className={styles.img10} src='../figma.svg'/>
+                          <img className={styles.img11} src='../adobephotoshop.svg'/>
+                          <img className={styles.img12} src='../visualstudiocode.svg'/>
+                        </div>
                     </div>
+                    
                     <div className={styles.content2}>
                         <p>Education</p>
                         <p>그린컴퓨터아카데미 프론트엔드 과정수료</p>

@@ -16,6 +16,7 @@ import {
     MoveIn
   } from "react-scroll-motion";
 import { useRouter } from 'next/router';
+import PDF from './PDF';
 
 const AboutDetail = () => {
 
@@ -49,12 +50,14 @@ const AboutDetail = () => {
             <div className={styles.detailtext}>
                 <p>
                     <b>‘Stay hungry stay foolish’</b> 
-                        &nbsp;제가 가장 좋아하는 문구인 스티브잡스의 명언처럼 멈추지않고 항상 배우는 개발자가 되기위해 노력하는 양정민입니다.
+                        &nbsp;제가 가장 좋아하는 문구인 스티브잡스의 명언처럼 멈추지않고 항상 배우는 개발자가 되기위해 노력하는 <b>양정민</b>입니다.
                 </p>
                 <p>
                     세상의 모든 것들을 인터넷으로 해결하는 지금, 저는 사용자의 입장에서 생각하는 개발자를 향해 나아가고 있습니다.
                 </p>
+                <PDF/>
             </div>
+            
         </div>
     </>
   )

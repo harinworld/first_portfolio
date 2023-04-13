@@ -56,11 +56,11 @@ const ProjectList = () => {
                     </div>
                     <div className={styles.content3}>
                       <img src={project.techStack[0]} />
-                      <img
-                        className={styles.techImg}
-                        src={project.techStack[1]}
-                      />
+                      <img src={project.techStack[1]} />
                       <img src={project.techStack[2]} />
+                      <img src={project.techStack[3]} />
+                      <img src={project.techStack[4]} />
+                      <img src={project.techStack[5]} />
                     </div>
                   </div>
                 </div>

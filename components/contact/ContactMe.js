@@ -17,17 +17,17 @@ const ContactMe = () => {
           <div className={styles.content2}>
             <p>Github</p>
             <p>
-              <Link href="https://github.com/harinworld">
+              <a href="https://github.com/harinworld" target="_blank">
                 https://github.com/harinworld
-              </Link>
+              </a>
             </p>
           </div>
           <div className={styles.content3}>
             <p>TISTORY</p>
             <p>
-              <Link href="https://harinworld.tistory.com/category/%EA%B0%9C%EB%B0%9C%EC%9E%90%EC%9D%BC%EA%B8%B0">
+              <a href="https://harinworld.tistory.com/category/%EA%B0%9C%EB%B0%9C%EC%9E%90%EC%9D%BC%EA%B8%B0" target="_blank">
                 https://harinworld.tistory.com
-              </Link>
+              </a>
             </p>
           </div>
         </div>
