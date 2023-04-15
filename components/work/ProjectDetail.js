@@ -46,9 +46,11 @@ const ProjectDetail = () => {
       <NavBar />
       <div className={styles.detailbg}>
         <div className={styles.ipad}>
+        <a href={detail.url} target="_blank">
           <video autoPlay muted loop width="100%" height="100%">
             <source src={detail.video} />
           </video>
+          </a>
         </div>
         <div className={styles.detailtext}>
           <div className={styles.content1}>

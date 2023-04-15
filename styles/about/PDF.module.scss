@@ -86,3 +86,142 @@
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:820px) {
+    .btn {
+        border: 1px solid #fff;
+        display: block;
+        text-align: center;
+        cursor: pointer;
+        text-transform: uppercase;
+        outline: none;
+        overflow: hidden;
+        position: relative;
+        color: #fff;
+        font-weight: 700;
+        font-size: 16px;
+        background-color: transparent;
+        width: 20vw;
+        height: 5vw;
+        margin-top: 1.3rem;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.20);
+        padding-top: 0.2rem;
+
+        &:hover {
+            border: 1px solid #000;
+            color: #000;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:768px) {
+    .btn {
+        border: 1px solid #fff;
+        display: block;
+        text-align: center;
+        cursor: pointer;
+        text-transform: uppercase;
+        outline: none;
+        overflow: hidden;
+        position: relative;
+        color: #fff;
+        font-weight: 700;
+        font-size: 16px;
+        background-color: transparent;
+        width: 20vw;
+        height: 5vw;
+        margin-top: 1.3rem;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.20);
+        padding-top: 0.2rem;
+
+        &:hover {
+            border: 1px solid #000;
+            color: #000;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:375px) {
+    .btn {
+        border: 1px solid #fff;
+        display: block;
+        text-align: center;
+        cursor: pointer;
+        text-transform: uppercase;
+        outline: none;
+        overflow: hidden;
+        position: relative;
+        color: #fff;
+        font-weight: 700;
+        font-size: 12px;
+        background-color: transparent;
+        width: 35vw;
+        height: 9vw;
+        margin-top: 0.8rem;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.20);
+        padding-top: 0rem;
+
+        &:hover {
+            border: 1px solid #000;
+            color: #000;
+        }
+    }
+}
