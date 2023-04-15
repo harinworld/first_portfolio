@@ -11,4 +11,4 @@ function resume() {
   )
 }
 
-export default pdfdown
+export default resume
