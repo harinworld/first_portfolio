@@ -180,7 +180,7 @@
 
 
 
-@media screen and (max-width:375px) {
+@media screen and (max-width:414px) {
     .abouttext {
         color: #fff;
         font-family: 'Playfair Display', serif;
@@ -219,125 +219,61 @@
             opacity: 0;
         }
     }
+}
 
-    .aboutbg {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:375px) {
+    .abouttext {
+        color: #fff;
+        font-family: 'Playfair Display', serif;
+        font-size: 2.5rem;
+        position: absolute;
         width: 100%;
-        height: 100vh;
-        background-color: #030A1E;
-        overflow: hidden;
-        box-sizing: border-box;
-        position: fixed;
-        left: 0;
-        top: 0;
+        left: 0%;
+        top: 0%;
+        z-index: 20;
+    }
 
-        .green1 {
-            position: absolute;
-            left: -10%;
-            top: 0%;
-            width: 33vw;
-            height: 33vw;
-            background: linear-gradient(#F4BE78, #46DAF3);
-            opacity: 50%;
-            border-radius: 50%;
-            filter: blur(40px);
-            animation: green1 25s infinite;
+    .abouttext2 {
+        font-size: 0.5rem;
+        position: absolute;
+        transform: translateX(-50%);
+        left: 50%;
+        bottom: 0%;
+        z-index: 20;
+        color: rgb(181, 181, 181);
+        animation: scroll 2s infinite;
+    }
+
+    @keyframes scroll {
+        0% {
+            bottom: 8%;
+            opacity: 0;
         }
 
-        @keyframes green1 {
-            0% {
-                left: -10%;
-                top: 0%;
-            }
-
-            50% {
-                left: 45%;
-                top: 40%;
-            }
-
-            70% {
-                left: 55%;
-                top: 0%;
-            }
-
-            100% {
-                left: -10%;
-                top: 0%;
-            }
+        50% {
+            bottom: 7%;
+            opacity: 1;
         }
 
-        .green2 {
-            position: absolute;
-            right: 0%;
-            top: 50%;
-            width: 30vw;
-            height: 30vw;
-            background: linear-gradient(60deg, #F4BE78, #46DAF3);
-            opacity: 70%;
-            border-radius: 50%;
-            filter: blur(40px);
-            animation: green2 20s infinite;
-        }
-
-        @keyframes green2 {
-            0% {
-                right: 0%;
-                top: 50%;
-            }
-
-            50% {
-                right: 70%;
-                top: 50%;
-            }
-
-            70% {
-                right: 30%;
-                top: -10%;
-            }
-
-            100% {
-                right: 0%;
-                top: 50%;
-            }
-        }
-
-        .green3 {
-            position: absolute;
-            left: 35%;
-            top: 40%;
-            width: 12vw;
-            height: 12vw;
-            background: linear-gradient(90deg, #F4BE78, #46DAF3);
-            opacity: 70%;
-            border-radius: 50%;
-            filter: blur(40px);
-            animation: green3 20s infinite;
-        }
-
-        @keyframes green3 {
-            0% {
-                left: 35%;
-                top: 40%;
-            }
-
-            20% {
-                left: 80%;
-                top: 0%;
-            }
-
-            55% {
-                left: 60%;
-                top: 80%;
-            }
-
-            85% {
-                left: 0%;
-                top: 40%;
-            }
-
-            100% {
-                left: 35%;
-                top: 40%;
-            }
+        100% {
+            bottom: 8%;
+            opacity: 0;
         }
     }
 }

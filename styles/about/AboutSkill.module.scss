@@ -832,6 +832,179 @@
 
 
 
+@media screen and (max-width:414px) {
+    .detailbg {
+        width: 100%;
+        height: 100vh;
+        margin-top: 0vh;
+        overflow: hidden;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        padding: 0 5%;
+        scale: 1;
+
+        .lottie {
+            scale: 1.2;
+            position: relative;
+            left: -30%;
+            top: -20%;
+            opacity: 0;
+            margin-top: 20vh;
+        }
+
+        .detailtext {
+            padding: 0 1em;
+            color: #fff;
+            width: 50vw;
+            text-align: center;
+            font-family: 'GmarketSansMedium';
+            position: relative;
+            opacity: 0;
+            justify-content: center;
+
+            .content1 {
+                letter-spacing: 0.8px;
+                line-height: 33px;
+
+                p:nth-of-type(1) {
+                    margin-top: 1rem;
+                    font-size: 1.3rem;
+                    font-weight: 700;
+                    background: linear-gradient(#2668EF, #71F3D2);
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    text-shadow: #71F3D2 0 0 10px;
+                    margin-bottom: 1.5rem;
+                }
+
+                .first {
+                    display: flex;
+                    justify-content: space-between;
+
+                    .img2 {
+                        margin: 0 1rem;
+                    }
+
+                    .img4 {
+                        margin: 0 1rem;
+                    }
+
+                    .img6 {
+                        margin-left: 1rem;
+                    }
+
+                    img {
+                        width: 4.8vw;
+                    }
+                }
+
+                .second {
+                    display: flex;
+                    margin-top: 1.2rem;
+                    justify-content: space-between;
+
+                    img {
+                        width: 4.8vw;
+                    }
+
+                    .img8 {
+                        margin: 0 1rem;
+                    }
+
+                    .img10 {
+                        margin: 0 1rem;
+                    }
+
+                    .img11 {
+                        margin-right: 1rem;
+                    }
+                }
+            }
+
+            .content2 {
+                margin-top: 3rem;
+                letter-spacing: 0.8px;
+                line-height: 33px;
+
+                p:nth-of-type(1) {
+                    font-size: 1.3rem;
+                    font-weight: 700;
+                    color: #c566d6;
+                    text-shadow: #BB31CF 0 0 10px;
+                }
+
+                p:nth-of-type(2) {
+                    margin-top: 0.4rem;
+                    font-size: 1rem;
+                    padding: 0 0.8rem;
+                    line-height: 25px;
+                    color: rgb(255, 255, 255);
+                }
+            }
+        }
+
+
+        &.active {
+            .lottie {
+                animation: move 0.8s 0s ease-in-out both;
+            }
+
+            @keyframes move {
+                0% {
+                    opacity: 0;
+                    left: 20%;
+                    transform: translateX(-50%);
+                    top: 0%;
+                }
+
+                100% {
+                    opacity: 1;
+                    left: 50%;
+                    transform: translateX(-40%);
+                    top: 0%;
+                }
+            }
+
+            .detailtext {
+                animation: move2 0.8s 0s ease-in-out both;
+            }
+
+            @keyframes move2 {
+                0% {
+                    opacity: 0;
+                    left: 80%;
+                    top: 0%;
+                    transform: translateX(-50%);
+                }
+
+                100% {
+                    opacity: 1;
+                    left: 50%;
+                    top: 0%;
+                    transform: translateX(-50%);
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width:375px) {
     .detailbg {
         width: 100%;
