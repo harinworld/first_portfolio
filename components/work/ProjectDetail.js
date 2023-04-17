@@ -78,6 +78,10 @@ const ProjectDetail = () => {
               <div className={styles.content4}>
                 <p>프로젝트 기간</p>
                 <p>{detail.day}</p>
+                <p>
+                  <img className={styles.gitsvg} src='../github.svg'/>
+                  <div><a href={detail.gitlink} target="_blank">github</a></div>
+                </p>
               </div> 
             </div>
           </div>
