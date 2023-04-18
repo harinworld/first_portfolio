@@ -1,22 +1,11 @@
 import React, { useEffect, useRef, useState } from 'react'
 import styles from '@/styles/about/AboutDetail.module.scss'
-import Lottie from "react-lottie-player";
-import lottieJson from "../../public/lottie_computer.json";
-import {
-    Animator,
-    ScrollContainer,
-    ScrollPage,
-    batch,
-    Fade,
-    FadeIn,
-    MoveOut,
-    Sticky,
-    StickyIn,
-    ZoomIn,
-    MoveIn
-  } from "react-scroll-motion";
 import { useRouter } from 'next/router';
 import PDF from './PDF';
+import localFont from 'next/font/local'
+// import font from '../../public/fonts/GmarketSansTTFMedium.woff'
+
+const myFont = localFont({src:'../../public/fonts/GmarketSansTTFMedium.woff'})
 
 const AboutDetail = () => {
 
@@ -47,7 +36,7 @@ const AboutDetail = () => {
     <>
         <div className={`${styles.detailbg} ${active?styles.active:null}`} ref={observerRef}>
             <img src='../animation_500_lg0ku4qn.gif' className={styles.lottie}/>
-            <div className={styles.detailtext}>
+            <div className={`${myFont.className} ${styles.detailtext}`}>
                 <p>
                     <b>‘Stay hungry stay foolish’</b> 
                         &nbsp;제가 가장 좋아하는 문구인 스티브잡스의 명언처럼 멈추지않고 항상 배우는 개발자가 되기위해 노력하는 <b>양정민</b>입니다.
