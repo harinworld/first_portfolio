@@ -5,7 +5,12 @@ import PDF from './PDF';
 import localFont from 'next/font/local'
 // import font from '../../public/fonts/GmarketSansTTFMedium.woff'
 
-const myFont = localFont({src:'../../public/fonts/GmarketSansTTFMedium.woff'})
+const myFont = localFont({
+  src:[
+    {path: '../../public/fonts/GmarketSansTTFMedium.woff', weight:'normal'},
+    {path: '../../public/fonts/GmarketSansTTFBold.woff', weight:'bold'}
+  ]
+})
 
 const AboutDetail = () => {
 
