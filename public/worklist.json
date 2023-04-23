@@ -86,7 +86,7 @@
         "../github.svg",
         "../react context.svg"
       ],
-      "trouble": "context api에서 json파일을 불러와 프로젝트들의 상세내용을 보여주었는데, detail페이지에서 navbar를 이용해 다른 페이지로 넘어갈때 쿼리값이 사라져 이동하지 못하는 이유가 있었다. if문을 사용해 빈값을 return해주어 해결하였습니다.",
+      "trouble": "context api에서 json파일을 불러와 프로젝트들의 상세내용을 보여주었는데, detail페이지에서 navbar를 이용해 다른 페이지로 넘어갈때 쿼리값이 사라져 이동하지 못하는 이슈가 있었다. if문을 사용해 빈값을 return해주어 해결하였습니다.",
       "trouble2": "public 폴더에 fonts파일을 위치시켰는데 로컬에서는 잘 적용되었지만 배포시 적용되지 않는 문제가 발생하였습니다. 이에 scss에서 font-family를 적용하는대신 next.js의 localfont로 적용시켜 해결하였습니다.",
       "trouble3": "",
       "day": "2023.04.07 ~ 2023.04.18"
