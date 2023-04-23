@@ -2,7 +2,7 @@
   "projects": [
     {
       "id": 0,
-      "url": "https://github.com/renewalP/renewal_p",
+      "url": "http://ajgrenewal.dothome.co.kr/",
       "gitlink": "https://github.com/renewalP/renewal_p",
       "name": "안중근 생애페이지 리뉴얼 사이트",
       "description": "기존의 안중근의사 기념관 사이트를 비쥬얼적 요소를 더해 리뉴얼하여 제작한 웹사이트입니다.",
@@ -67,6 +67,52 @@
       "trouble2": "각각의 애니메이션 섹션에서 'see more' 버튼을 누르면 각각의 애니메이션 캐릭터 페이지로 이동하기위해 'Link'태그 쿼리값으로 애니메이션 이름을 넘겨주었습니다.",
       "trouble3": "캐릭터별 미니 sns페이지를 구현하기위해 Next Auth를 사용해 SNS 로그인 기능을 구현하였습니다. 이후 작업의 효율성을 높이기위해 카카오와 구글 auth 설정에서 동일한 항목을 넘기게 설정해주었습니다.",
       "day": "2023.02.24 ~ 2023.03.20"
+    },
+    {
+      "id": 3,
+      "url": "https://first-portfolio-phi.vercel.app",
+      "name": "portfolio 페이지",
+      "gitlink": "https://github.com/harinworld/first_portfolio",
+      "description": "Next.js로 만든 프론트엔드 개발자로의 첫번째 포트폴리오 페이지입니다.",
+      "image": "../src/img/portfolio_mockup.png",
+      "video": "../src/img/portfolio_video.mp4",
+      "mobile": "../src/img/portfolio_mobile.mov",
+      "detail": "해당 프로젝트는 첫번째 포트폴리오 페이지 프로젝트이며, React 프레임워크인 Next.js를 사용하여 제작되었습니다. 스타일은 scss로 적용하였습니다.",
+      "techStack": [
+        "../nextdotjs.svg",
+        "../sass.svg",
+        "../vercel (1).svg",
+        "../figma.svg",
+        "../github.svg",
+        "../react context.svg"
+      ],
+      "trouble": "context api에서 json파일을 불러와 프로젝트들의 상세내용을 보여주었는데, detail페이지에서 navbar를 이용해 다른 페이지로 넘어갈때 쿼리값이 사라져 이동하지 못하는 이유가 있었다. if문을 사용해 빈값을 return해주어 해결하였습니다.",
+      "trouble2": "public 폴더에 fonts파일을 위치시켰는데 로컬에서는 잘 적용되었지만 배포시 적용되지 않는 문제가 발생하였습니다. 이에 scss에서 font-family를 적용하는대신 next.js의 localfont로 적용시켜 해결하였습니다.",
+      "trouble3": "",
+      "day": "2023.04.07 ~ 2023.04.18"
+    },
+    {
+      "id": 4,
+      "url": "https://harinworld.github.io",
+      "name": "Vue mini 인스타 페이지",
+      "gitlink": "https://github.com/harinworld/mini-instagram",
+      "description": "Vue.js로 제작한 미니 인스타그램 페이지입니다.",
+      "image": "../src/img/vueinsta_mockup.png",
+      "video": "../src/img/vueinsta_video.mov",
+      "mobile": "../src/img/vueinsta_mobile.mov",
+      "detail": "해당 프로젝트는 미니 인스타그램 프로젝트이며, 자바스크립트 라이브러리인 Vue.js를 사용하여 제작되었습니다. 간단한 사진과 문구 포스팅, 사진에 필터적용등을 구현했습니다.",
+      "techStack": [
+        "../vuedotjs.svg",
+        "../css.svg",
+        "../githubpages.svg",
+        "../figma.svg",
+        "../github.svg",
+        "../visualstudiocode.svg"
+      ],
+      "trouble": "서버없이 프로트만으로 사진을 업로드하는 기능을 구현하기위해 많은 방법을 찾아보았습니다. 여러 방법들중 URL.createObjectURL 을 이용해 구현했습니다.",
+      "trouble2": "인스타그램의 대표 기능중 하나인 여러가지 필터 기능을 구현하기위해 cssgram을 사용하였습니다.",
+      "trouble3": "js파일로 페이지를 구분하지않고, 구분되는 단계마다 step을 지정해 v-if를 사용하여 페이지 이동을 시켰습니다.",
+      "day": "2023.04.05 ~ 2023.04.09"
     }
   ]
 }

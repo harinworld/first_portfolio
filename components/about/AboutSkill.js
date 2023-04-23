@@ -1,20 +1,14 @@
 import React, { useEffect, useRef, useState } from 'react'
 import styles from '@/styles/about/AboutSkill.module.scss'
-import Lottie from "react-lottie-player";
-import lottieJson from "../../public/coding-slide.json";
-import Html from "../../public/html5.svg";
-import {
-    Animator,
-    ScrollPage,
-    batch,
-    StickyIn,
-    FadeIn,
-    MoveIn,
-    MoveOut,
-    Sticky,
-    Fade
-  } from "react-scroll-motion";
 import { useRouter } from 'next/router';
+import localFont from 'next/font/local'
+
+const myFont = localFont({
+  src:[
+    {path: '../../public/fonts/GmarketSansTTFMedium.woff', weight:'normal'},
+    {path: '../../public/fonts/GmarketSansTTFBold.woff', weight:'bold'}
+  ]
+})
 
 const AboutSkill = () => {
 
@@ -67,7 +61,7 @@ const AboutSkill = () => {
                     
                     <div className={styles.content2}>
                         <p>Education</p>
-                        <p>그린컴퓨터아카데미 프론트엔드 과정수료</p>
+                        <p className={myFont.className}>그린컴퓨터아카데미 프론트엔드 과정수료</p>
                     </div>
                 </div>
             </div>

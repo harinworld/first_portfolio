@@ -3,7 +3,14 @@ import styles from "@/styles/work/ProjectDetail.module.scss";
 import { useRouter } from "next/router";
 import NavBar from "../NavBar";
 import { DataContext } from "../context/Context";
-import Link from "next/link";
+import localFont from 'next/font/local'
+
+const myFont = localFont({
+  src:[
+    {path: '../../public/fonts/GmarketSansTTFMedium.woff', weight:'normal'},
+    {path: '../../public/fonts/GmarketSansTTFBold.woff', weight:'bold'}
+  ]
+})
 
 const ProjectDetail = () => {
   const data = useContext(DataContext);
@@ -16,33 +23,10 @@ const ProjectDetail = () => {
   const detail = data.projects[router.query.id];
   // console.log("aaa", detail);
 
-  // const observerRef = useRef([]);
-  // const [active,setActive] = useState(false);
-  // const router = useRouter();
-
-  // useEffect(()=>{
-
-  //   let observer = new IntersectionObserver(
-  //     ([e]) => {
-  //       if (e.isIntersecting) {
-  //         setActive(true)
-  //       }else{
-  //         setActive(false)
-  //       }
-  //     },
-  //     { threshold: 0.5 }
-  //   );
-
-  //   if(observerRef.current){
-  //     observer.observe(observerRef.current)
-  //   }
-  // },[observerRef,active])
-
   if (!detail) return <></>;
 
   return (
     <>
-      {/* <div className={`${styles.detailbg} ${active?styles.active:null}`} ref={observerRef}> */}
       <NavBar />
       <div className={styles.detailbg}>
         <div className={styles.ipad}>
@@ -52,7 +36,7 @@ const ProjectDetail = () => {
           </video>
           </a>
         </div>
-        <div className={styles.detailtext}>
+        <div className={`${myFont.className} ${styles.detailtext}`}>
           <div className={styles.content1}>
             <p>{detail.name}</p>
             <button>

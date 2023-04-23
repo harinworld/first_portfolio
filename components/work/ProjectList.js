@@ -15,6 +15,14 @@ import "swiper/css/navigation";
 import { Autoplay, Pagination, Navigation } from "swiper";
 import styles from "@/styles/work/ProjectList.module.scss";
 import Link from "next/link";
+import localFont from 'next/font/local'
+
+const myFont = localFont({
+  src:[
+    {path: '../../public/fonts/GmarketSansTTFMedium.woff', weight:'normal'},
+    {path: '../../public/fonts/GmarketSansTTFBold.woff', weight:'bold'}
+  ]
+})
 
 const ProjectList = () => {
   const data = useContext(DataContext);
@@ -47,7 +55,7 @@ const ProjectList = () => {
                       <img src={project.image} alt={project.name} />
                     </Link>
                   </div>
-                  <div className={styles.detailtext}>
+                  <div className={`${myFont.className} ${styles.detailtext}`}>
                     <div className={styles.content1}>
                       <p>{project.name}</p>
                     </div>
